@@ -31,6 +31,7 @@
             ButtonNew = new Button();
             ButtonOpen = new Button();
             splitContainer1 = new SplitContainer();
+            ButtonSave = new Button();
             ButtonAdd = new Button();
             BoxContent = new TextBox();
             LabelContent = new Label();
@@ -41,7 +42,6 @@
             LabelCurrentLog = new Label();
             LabelPathLog = new Label();
             LabelPathMarkdown = new Label();
-            ButtonSave = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -99,6 +99,20 @@
             splitContainer1.Size = new Size(639, 389);
             splitContainer1.SplitterDistance = 318;
             splitContainer1.TabIndex = 2;
+            // 
+            // ButtonSave
+            // 
+            ButtonSave.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            ButtonSave.BackColor = Color.Transparent;
+            ButtonSave.FlatAppearance.BorderColor = Color.FromArgb(64, 64, 64);
+            ButtonSave.FlatStyle = FlatStyle.Flat;
+            ButtonSave.Location = new Point(128, 352);
+            ButtonSave.Name = "ButtonSave";
+            ButtonSave.Size = new Size(113, 34);
+            ButtonSave.TabIndex = 5;
+            ButtonSave.Text = "Save";
+            ButtonSave.UseVisualStyleBackColor = false;
+            ButtonSave.Click += ButtonSave_Click;
             // 
             // ButtonAdd
             // 
@@ -184,7 +198,7 @@
             BoxCurrentLog.Name = "BoxCurrentLog";
             BoxCurrentLog.ReadOnly = true;
             BoxCurrentLog.ScrollBars = ScrollBars.Vertical;
-            BoxCurrentLog.Size = new Size(307, 358);
+            BoxCurrentLog.Size = new Size(307, 318);
             BoxCurrentLog.TabIndex = 6;
             // 
             // LabelCurrentLog
@@ -201,7 +215,7 @@
             LabelPathLog.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             LabelPathLog.AutoSize = true;
             LabelPathLog.BackColor = Color.Transparent;
-            LabelPathLog.Location = new Point(131, 404);
+            LabelPathLog.Location = new Point(137, 404);
             LabelPathLog.Name = "LabelPathLog";
             LabelPathLog.Size = new Size(111, 20);
             LabelPathLog.TabIndex = 3;
@@ -212,24 +226,11 @@
             LabelPathMarkdown.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             LabelPathMarkdown.AutoSize = true;
             LabelPathMarkdown.BackColor = Color.Transparent;
-            LabelPathMarkdown.Location = new Point(131, 426);
+            LabelPathMarkdown.Location = new Point(137, 426);
             LabelPathMarkdown.Name = "LabelPathMarkdown";
             LabelPathMarkdown.Size = new Size(102, 20);
             LabelPathMarkdown.TabIndex = 4;
             LabelPathMarkdown.Text = "File Path(.md):";
-            // 
-            // ButtonSave
-            // 
-            ButtonSave.BackColor = Color.Transparent;
-            ButtonSave.FlatAppearance.BorderColor = Color.FromArgb(64, 64, 64);
-            ButtonSave.FlatStyle = FlatStyle.Flat;
-            ButtonSave.Location = new Point(128, 352);
-            ButtonSave.Name = "ButtonSave";
-            ButtonSave.Size = new Size(113, 34);
-            ButtonSave.TabIndex = 5;
-            ButtonSave.Text = "Save";
-            ButtonSave.UseVisualStyleBackColor = false;
-            ButtonSave.Click += ButtonSave_Click;
             // 
             // MainForm
             // 
