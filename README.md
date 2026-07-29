@@ -48,6 +48,7 @@ That's when I decided to spend my free time and created ADevLogger. A desktop ap
   <li>"Save" button: Saves the changes you made.<br><b>Don't forget to press save! I actually forgot to press save during testing and I had to rewrite my logs again.</b></li>
 </ol>
 <h3>Cloning Repository(git)</h3>
+<p>.NET 10 will be required for this project.</p>
 <pre><code>git clone https://github.com/sud0a1ex/ADevLogger.git</code></pre>
 <hr>
 <h2>Future Plans</h2>
